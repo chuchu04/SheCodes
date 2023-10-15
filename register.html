@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>login page</title>
+</head>
+
+<body>
+    <section>
+        <div class="side_pic">
+            <img class="login_logo" src="assets/images/login_side_img.png" alt="Logo_1">
+        </div>
+
+        <div class="rectangle-parent">
+        </div>
+
+
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h3>SIGN UP</h3>
+
+                    <div class="box">
+                        <label for="input"></label>
+                        <input type="text" id="prefername" placeholder="Preferred name" required>
+
+                    </div>
+
+                    <div class="box">
+                        <label for="input"></label>
+                        <input type="email" id="email" placeholder="Phone number or email" required>
+
+                    </div>
+
+                    <div class="box">
+                        <label for="input"></label>
+                        <input type="email" id="pass" placeholder="Password" required>
+
+                    </div>
+
+                    <div class="box">
+                        <label for="input" ></label>
+                        <input type="password" id="confirmpass" placeholder="Re-enter Password" required>
+                    </div>
+
+
+                    <button type= "button" onclick="showToasts()"> Create new account</button>
+
+                </form>
+            </div>
+        </div>
+    </section>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js">
+    </script>
+    <script>
+        function showToasts() {
+            toastr.success('Login successfully', 'success');
+            // toastr.error('Error, try again', 'unsuccesfully');
+        }
+
+        function getEmail(){
+            var email = document.getElementById("email").value;
+            console.log(email);
+        }
+
+    </script>
+
+</body>
+</html>
